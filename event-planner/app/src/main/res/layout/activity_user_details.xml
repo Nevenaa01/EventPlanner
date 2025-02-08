@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserDetailsActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@android:color/white"
+            android:elevation="4dp">
+
+            <!-- Address -->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yyytt"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Categories -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-7246479445669047305, 579527786105708896"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Company Address -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Address"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/companyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yshs"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Company Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Description"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sss"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Company Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Email"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/companyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ds@gmail.com"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Company Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="udu"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Company Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Phone"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/companyPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- User Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Email"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jovan.katanic204@gmail.com"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- Event Types -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Types"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/eventTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-764083515263202305"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <!-- First Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="joo"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+
+            <!-- Last Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="14sp"
+                android:textColor="#616161"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1444"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:paddingBottom="8dp" />
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="130dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_background">
+            <LinearLayout
+                android:id="@+id/topRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/lblListHeader"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textSize="21sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textStyle="bold"
+                    android:text="Error"/>
+                <ImageView
+                    android:id="@+id/iconAddSubcategory"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@drawable/ic_add"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"/>
+                <ImageView
+                    android:id="@+id/iconDelete"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@drawable/ic_delete"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:onClick="onIconDeleteClick"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:id="@+id/iconEdit"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:src="@drawable/ic_edit"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/lblListDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topRow"
+                android:textSize="13sp"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginLeft="20dp"
+                android:padding="8dp"
+                android:text="Error"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+
+
+
+

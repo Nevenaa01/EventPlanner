@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_array">
+        <item>Sort by</item>
+        <item>ASC</item>
+        <item>DSC</item>
+        <item>Rising price</item>
+        <item>Decreasing price</item>
+    </string-array>
+</resources>

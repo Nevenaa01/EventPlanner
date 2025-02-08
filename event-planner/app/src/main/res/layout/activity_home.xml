@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+    <Button
+        android:id="@+id/homeact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Home"
+        android:textSize="20sp"/>
+<!--    <Button-->
+<!--        android:id="@+id/productsManagmentPUPZ"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="productsManagmntPUPZ"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/productsManagmentPUPV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="productsManagmntPUPV"-->
+<!--        android:textSize="20sp"/>-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/serviceManagmentPUPZ"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="serviceManagmentPUPZ"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/serviceManagmentPUPV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="serviceManagmentPUPV"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/packageManagmentPUPZ"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="packageManagmentPUPZ"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/packageManagmentPUPV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="packageManagmentPUPV"-->
+<!--        android:textSize="20sp"/>-->
+
+    <Button
+        android:id="@+id/pricelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pricelist"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/user_reports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_reports"
+        android:textSize="20sp"/>
+ 
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/register"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="LogIn"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/categoriesButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Categories"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/typesOfEventsButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Event Types"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="SingOut"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/approveRegistration"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Registration requests"
+        android:layout_gravity="center"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/owner_dashboard_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner Dashboard"
+        android:textSize="16dp"
+        android:paddingVertical="12dp"
+        app:cornerRadius="10dp"
+        android:layout_marginHorizontal="24dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reservation_view_id"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservation view"
+        android:textSize="16dp"
+        android:paddingVertical="12dp"
+        app:cornerRadius="10dp"
+        android:layout_marginHorizontal="24dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_comment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a comment"
+        android:textSize="16dp"
+        android:paddingVertical="12dp"
+        app:cornerRadius="10dp"
+        android:layout_marginHorizontal="24dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/view_company_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments view"
+        android:textSize="16dp"
+        android:paddingVertical="12dp"
+        app:cornerRadius="10dp"
+        android:layout_marginHorizontal="24dp"
+        />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_dark"
+    tools:context=".fragments.ShowFavouritesPspFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_dark"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/purple_light">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/products"
+
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/services"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/packages"
+            />
+    </com.google.android.material.tabs.TabLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/scroll_products_list"
+
+        >
+        <ListView
+            android:id="@+id/productListt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/product_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            />
+        <ListView
+            android:id="@+id/serviceListt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/service_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <ListView
+            android:id="@+id/packageListt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/package_card_pupv"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

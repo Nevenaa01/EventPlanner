@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_dark"
+    tools:context="com.example.eventplanner.fragments.ProductsServicesPageFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_dark"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/purple_light">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/products"
+
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/services"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/packages"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/search_hint"
+                app:strokeColor="@color/purple_light"
+                app:icon="@drawable/ic_search"
+                android:layout_marginStart="5dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/create_event_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp">
+                <Spinner
+                    android:id="@+id/btnSort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:foregroundTint="#FFFFFF"
+                    android:text="@string/sort"
+                    android:textColor="@color/white"
+                    android:tooltipText="@string/sort"
+                    android:backgroundTint="@color/white"
+                    android:popupBackground="@color/purple_light"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/searchByEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:hint="@string/search_by_your_event"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/purple_light"
+        app:boxStrokeWidth="2dp"
+        app:boxBackgroundColor="@color/purple_light"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteInputTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/scroll_products_list"
+
+        >
+        <ListView
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/product_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            />
+        <ListView
+            android:id="@+id/serviceList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/service_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+        <ListView
+            android:id="@+id/packageList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/package_card_pupv"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

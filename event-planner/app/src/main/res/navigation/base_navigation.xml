@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_navigation"
+    app:startDestination="@+id/nav_product_and_services"
+    >
+    <fragment
+        android:id="@+id/nav_product_and_services"
+        android:name="com.example.eventplanner.fragments.ProductsServicesPageFragment"
+        android:label="Products, services and packages"
+        tools:layout="@layout/fragment_products_services_page"
+        />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.example.eventplanner.fragments.ShowEventFragment"
+        android:label="Events"
+        tools:layout="@layout/fragment_show_event"
+        app:popUpTo="@+id/nav_product_and_services"
+        app:popUpToInclusive="true">
+
+        <action
+            android:id="@+id/action_nav_events_to_nav_create_event"
+            app:destination="@id/nav_create_event" />
+
+        </fragment>
+
+    <fragment
+        android:id="@+id/nav_create_event"
+        android:name="com.example.eventplanner.fragments.CreateEventFragment"
+        android:label="Create event"
+        tools:layout="@layout/fragment_create_event"
+        app:popUpTo="@+id/nav_product_and_services"
+        app:popUpToInclusive="true"
+        />
+
+
+    <fragment
+        android:id="@+id/my_profile"
+        android:name="com.example.eventplanner.fragments.MyProfileFragment"
+        android:label="My profile"
+        tools:layout="@layout/fragment_my_profile"
+        app:popUpTo="@+id/my_profile"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/chats"
+        android:name="com.example.eventplanner.fragments.ChatsFragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chats"
+        app:popUpTo="@+id/chats"
+        app:popUpToInclusive="true"
+        />
+
+    <fragment
+        android:id="@+id/favouritespsp"
+        android:name="com.example.eventplanner.fragments.ShowFavouritesPspFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_show_favourites_psp"
+        app:popUpTo="@+id/favouritespsp"
+        app:popUpToInclusive="true"
+        />
+
+
+
+
+
+
+</navigation>

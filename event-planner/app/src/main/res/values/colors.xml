@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_dark">#FF2B1763</color>
+    <color name="purple_light">#FF905FEA</color>
+    <color name="yellow">#FFF9AD4C</color>
+
+    <color name="gray">#EAEAEA</color>
+    <color name="light_danger">#FFE7E7</color>
+    <color name="danger">#FF4848</color>
+    <color name="light_success">#DCFFEE</color>
+    <color name="success">#00B45D</color>
+    <color name="purple_lighter">#E4D5FF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="grey">#373333</color>
+</resources>

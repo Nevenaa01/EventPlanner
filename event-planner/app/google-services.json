@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1032505958815",
+    "project_id": "eventplanner-tim20-204ac",
+    "storage_bucket": "eventplanner-tim20-204ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032505958815:android:69a8760cc6a4d3ea491daa",
+        "android_client_info": {
+          "package_name": "com.example.eventplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJpzU9kXYuKHaQ03fC-NcBJZVVH9P27n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

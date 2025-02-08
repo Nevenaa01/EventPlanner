@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventPlanner"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.ShowOneChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotificationsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CommentPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddCommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ReservationView"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ShowOnePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ShowOneServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ShowOneProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ReservePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ApproveRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UserReportsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CompanyViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PricelistActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".services.NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.HomeTwoActivity" />
+        <activity
+            android:name=".activities.ShowOneEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WorkerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WorkerScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddWorkerScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterWorkerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OwnerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SearchAndFilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PUPV_RegisterCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SuggestedSubcategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddEventTypesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EventTypesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddSubcategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OD_RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditPackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CreatePackageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.PackageListPupvFragment"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PackagesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CreateServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ServicesManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CreateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProductsManegementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

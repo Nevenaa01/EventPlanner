@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PricelistActivity"
+    android:scrollbarStyle="outsideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pricelist"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/download"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_download"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/products"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+        <ListView
+            android:id="@+id/product_list"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            tools:listitem="@layout/pricelist_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/services"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+        <ListView
+            android:id="@+id/service_list"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            tools:listitem="@layout/pricelist_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/packages"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+        <ListView
+            android:id="@+id/package_list"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            tools:listitem="@layout/pricelist_card"
+            android:paddingRight="10dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="true"
+            android:scrollbarStyle="outsideOverlay"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
